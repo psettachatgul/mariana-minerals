@@ -70,7 +70,7 @@ const locale = {
   auth: {
     loading: 'Loading...',
     appTitle: 'Base Runtime Environment',
-    appDescription: 'Manage and analyze vulnerability data with advanced tools',
+    appDescription: 'Your app description here',
     login: 'Login',
     signup: 'Sign Up',
   },
