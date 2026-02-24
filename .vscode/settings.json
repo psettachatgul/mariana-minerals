@@ -1,0 +1,8 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "pattern": "projects/*/"
+    },
+  ],
+  "typescript.preferences.importModuleSpecifier": "project-relative"
+}

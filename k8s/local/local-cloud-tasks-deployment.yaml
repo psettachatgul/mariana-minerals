@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    deployment: local-cloud-tasks
+  name: local-cloud-tasks-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      deployment: local-cloud-tasks
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        deployment: local-cloud-tasks
+    spec:
+      containers:
+        - name: local-cloud-tasks
+          image: ghcr.io/aertje/cloud-tasks-emulator:latest
+          imagePullPolicy: IfNotPresent
+            # - while true; do sleep 2; df -h; done
+          ports:
+            - containerPort: 8123
+          resources: {}
+          args: ["-host", "", "-port", "8123"]
+      restartPolicy: Always
+status: {}
