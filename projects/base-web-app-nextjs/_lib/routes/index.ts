@@ -1,6 +1,6 @@
 import '../iocConfig/mock/server';
 
-import { AppRouteHandlerRoutes } from '@patson/base-web-app-nextjs/.next/dev/types/routes';
+import { AppRouteHandlerRoutes } from '@patson/base-web-app-nextjs/.next/types/routes';
 import { NextRequest, NextResponse } from 'next/server';
 import { ZodType } from 'zod';
 import { runInSessionContext } from '../contexts/session';
