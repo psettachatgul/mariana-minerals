@@ -6,6 +6,7 @@ const locale = {
     version: 'v1.0.0',
     items: {
       home: 'Home',
+      projects: 'Projects',
       darkMode: 'Dark Mode',
       uploadFile: 'Upload File',
       logout: 'Logout',

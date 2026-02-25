@@ -25,6 +25,14 @@ export const getNavBarItems = (
       },
     },
     {
+      id: 'projects',
+      label: locale.nav.items.projects,
+      icon: <DashboardIcon />,
+      onClick: () => {
+        router.push('/projects');
+      },
+    },
+    {
       id: 'uploadFile',
       label: locale.nav.items.uploadFile,
       icon: <UploadFileDialog {...uploadFileDialogProps} />,
